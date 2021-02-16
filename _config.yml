@@ -31,3 +31,5 @@ plugins:
 # Custom variables
 owner : "callenb"
 year : "2021"
+
+exclude: ['.deploy']
