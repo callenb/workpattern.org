@@ -3,8 +3,8 @@
   <channel>
     <title>Workpattern Library</title>
     <description>Calculates dates and durations whilst taking into account working and non-working times. It creates calendars similar to what you can find in project scheduling software like Microsoft project and Primavera P6.</description>
-    <link>http://localhost:4000</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <link></link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
     <author>
       <name>callenb</name>
       <email>barrie@callenb.org</email>
@@ -33,9 +33,9 @@
 
 </description>
         <pubDate>Mon, 15 Feb 2021 09:57:15 +0000</pubDate>
-        <link>http://localhost:4000//welcome-to-jekyll</link>
-        <link href="http://localhost:4000/welcome-to-jekyll"/>
-        <guid isPermaLink="true">http://localhost:4000/welcome-to-jekyll</guid>
+        <link>//welcome-to-jekyll</link>
+        <link href="/welcome-to-jekyll"/>
+        <guid isPermaLink="true">/welcome-to-jekyll</guid>
       </item>
     
       <item>
@@ -205,9 +205,9 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000//Yet-Another-Sample-Page</link>
-        <link href="http://localhost:4000/Yet-Another-Sample-Page"/>
-        <guid isPermaLink="true">http://localhost:4000/Yet-Another-Sample-Page</guid>
+        <link>//Yet-Another-Sample-Page</link>
+        <link href="/Yet-Another-Sample-Page"/>
+        <guid isPermaLink="true">/Yet-Another-Sample-Page</guid>
       </item>
     
       <item>
@@ -377,9 +377,9 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000//Sample-Page</link>
-        <link href="http://localhost:4000/Sample-Page"/>
-        <guid isPermaLink="true">http://localhost:4000/Sample-Page</guid>
+        <link>//Sample-Page</link>
+        <link href="/Sample-Page"/>
+        <guid isPermaLink="true">/Sample-Page</guid>
       </item>
     
       <item>
@@ -549,9 +549,9 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Mon, 11 Dec 2017 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000//One-More-Sample-Page</link>
-        <link href="http://localhost:4000/One-More-Sample-Page"/>
-        <guid isPermaLink="true">http://localhost:4000/One-More-Sample-Page</guid>
+        <link>//One-More-Sample-Page</link>
+        <link href="/One-More-Sample-Page"/>
+        <guid isPermaLink="true">/One-More-Sample-Page</guid>
       </item>
     
       <item>
@@ -721,9 +721,9 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Sun, 10 Dec 2017 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000//Another-Sample-Page</link>
-        <link href="http://localhost:4000/Another-Sample-Page"/>
-        <guid isPermaLink="true">http://localhost:4000/Another-Sample-Page</guid>
+        <link>//Another-Sample-Page</link>
+        <link href="/Another-Sample-Page"/>
+        <guid isPermaLink="true">/Another-Sample-Page</guid>
       </item>
     
   </channel>
