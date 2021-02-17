@@ -1,16 +1,28 @@
+#------------------------------
+# General Site Settings
+#
 title: Workpattern Library
+email: barrie@callenb.org
 name: Workpattern Library
 description: "Calculates dates and durations whilst taking into account working and non-working times. It creates calendars similar to what you can find in project scheduling software like Microsoft project and Primavera P6."
+baseurl: ""
+url: "https://workpattern.org"
+
+
+
+
+#------------------------------
+# Author Settings
+#
 author:
-  name: "callenb"
+  name: "Barrie Callender"
   email: "barrie@callenb.org"
   url: "https://github.com/callenb"
-
-baseurl: /
-
+#------------------------------
+# Build settings
+#
 source: .
 destination: ./_site
-permalink: /:title
 paginate: 10
 paginate_path: /page/:num/
 
