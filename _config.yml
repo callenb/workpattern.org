@@ -40,6 +40,9 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
+# efault extensions for new posts and pages
+post_ext: md
+page_ext: html
 # Custom variables
 owner : "callenb"
 year : "2021"
