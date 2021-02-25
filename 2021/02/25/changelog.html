@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta name="generator" content="Jekyll">
+
+  <title>CHANGELOG</title>
+
+  <link rel="stylesheet" href="/css/main.css">
+  
+  <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM Feed" /> <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>CHANGELOG | Workpattern Library</title>
+<meta name="generator" content="Jekyll v4.0.1" />
+<meta property="og:title" content="CHANGELOG" />
+<meta name="author" content="Barrie Callender" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Workpattern v0.6.0 ( 21 Feb, 2021)" />
+<meta property="og:description" content="Workpattern v0.6.0 ( 21 Feb, 2021)" />
+<link rel="canonical" href="https://workpattern.org/2021/02/25/changelog.html" />
+<meta property="og:url" content="https://workpattern.org/2021/02/25/changelog.html" />
+<meta property="og:site_name" content="Workpattern Library" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-02-25T22:21:13+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="CHANGELOG" />
+<script type="application/ld+json">
+{"headline":"CHANGELOG","dateModified":"2021-02-25T22:21:13+00:00","datePublished":"2021-02-25T22:21:13+00:00","description":"Workpattern v0.6.0 ( 21 Feb, 2021)","author":{"@type":"Person","name":"Barrie Callender"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://workpattern.org/2021/02/25/changelog.html"},"@type":"BlogPosting","url":"https://workpattern.org/2021/02/25/changelog.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+  <div>
+    <a href="/">
+    
+    <h1>workpattern@library</h1>
+    </a>
+    <div class="header-links">
+      <a href="/archive"><h2 class="header-link">Archive</h2></a>
+<a href="/about"><h2 class="header-link">About</h2></a>
+<a href="/atom.xml"><h2 class="header-link">RSS</h2></a>
+    </div>
+  </div>
+</header>
+    <div class="container">
+      <section id="main_content">
+        <article>
+  <h2>CHANGELOG</h2>
+  <time datetime="2021-02-25T22:21:13+00:00" class="by-line">25 Feb 2021</time>
+  <h2 id="workpattern-v060--21-feb-2021">Workpattern v0.6.0 ( 21 Feb, 2021)</h2>
+
+<p>I stopped keeping this Changelog file update back when v0.5.0 was realeased on 19 Oct 2016 and now it is 10Feb 2021 and I’m playing catch-up.
+I have created the following set of bullet point changes by going through my commit messages, the quality of which varies greatly.<br />
+A lot of the effort has been on making the code easier to read as it was a real mess.
+Here is a chronological take on what I have been doing.</p>
+
+<ul>
+  <li>removed test warnings by surrounding ambiguous negatives with parenthesis</li>
+  <li>I think a bug was fixed by changing #wee_total and #total to just an attr_writer</li>
+  <li>removed some duplicated code</li>
+  <li>replaced a number of literals with constants which I put in their own file</li>
+  <li>made a lot of the code easier to read, such as extracting to a method with a sensible name or renaming existing ones</li>
+  <li>Workpattern is now tested on Ruby 1.9.3, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, ruby-head, jruby-19mode &amp; jruby-head</li>
+  <li>Created a Day class to remove the complexity from Week so Week deals with weeks and Day with a day</li>
+  <li>My Clock class was replaced by Time or Date objects in all tests.  Clock only used for internal stuff now.</li>
+  <li>Switched to sorted_set rubygem after the SortedSet class was removed from Ruby in v3.x.</li>
+  <li>Workpattern now works with ruby 3.0.1dev</li>
+  <li>added Contributor Covenant Code of Conduct</li>
+</ul>
+
+<h2 id="workpattern-v050--oct-19-2016">Workpattern v0.5.0 ( Oct 19, 2016)</h2>
+
+<ul>
+  <li>Workpattern now handles Timezones.  It changes the date into UTC, does the calculation and then changes it back * Barrie Callender</li>
+  <li>Removed Day class and associated tests as it is no longer used * Barrie Callender</li>
+  <li>Reviewed the README and removed a lot of cruft and also updated it a little to demonstrate features * Barrie Callender</li>
+  <li>Hid documentation unless it was part of the public api * Barrie Callender</li>
+  <li>Used Rubocop to help me be more consistent.  I ignored some of the offences to do with long lines/methods and classes * Barrie Callender</li>
+  <li>Code makes use of Time objects where it use to use DateTime.  Time comes with a Timezone * Barrie Callender</li>
+  <li>Rewrote/refactored methods in the Week class - which needs refactoring into new classes * Barrie Callender</li>
+  <li>Removed rubyforge_project from workpattern.gemspec * Barrie Callender</li>
+  <li>Added homepage &amp; required_ruby_version to workpattern.gemspec * Barrie Callender</li>
+  <li>Added versions to test in Travis CI to include 1.9.3, 2.0.0, 2.1.0, 2.1.9, 2.2.0, 2.2.5, 2.3.0 &amp; 2.3.1 * Barrie Callender</li>
+  <li>Dealt with Travis CI issue with version of bundler * Barrie Callender</li>
+  <li>Removed config directory &amp; contents * Barrie Callender</li>
+  <li>Changed Description * barrie Callender</li>
+  <li>Specified minitest ~&gt; 5.4.3 due to an issue I no longer recall * Barrie Callender</li>
+  <li>Hid all the documentation apart from public api * Barrie Callender</li>
+  <li>improved the README.md (IMHO) * Barrie Callender</li>
+</ul>
+
+<h2 id="workpattern-v040--may-23-2014">Workpattern v0.4.0 ( May 23, 2014)</h2>
+
+<ul>
+  <li>Updated Week class to use bits and removed Day and Hour class as a consequence * Barrie Callender *</li>
+  <li>This resulted in a performance improvement and some new tests</li>
+</ul>
+
+<h2 id="workpattern-v036-mar-25-2014">Workpattern v0.3.6 (Mar 25, 2014)</h2>
+
+<ul>
+  <li>total minutes of week is zero when short week starting after Sunday (#17) * Barrie Callender *</li>
+  <li>Subtracting starting from top of the hour and last minute is non working (#18) * Barrie Callender *</li>
+  <li>Refactorings intended to make the code easier to read and easier to change - still more to do * Barrie Callender *</li>
+</ul>
+
+<h2 id="workpattern-v035-sep-30-2013">Workpattern v0.3.5 (Sep 30, 2013)</h2>
+
+<ul>
+  <li>License missing from gemspec (#16) * Barrie Callender *</li>
+  <li>Removed Gemfile.lock from git and updated .gitignore to the bundler defaults * Barrie Callender *</li>
+</ul>
+
+<h2 id="workpattern-v034-sep-27-2013">Workpattern v0.3.4 (Sep 27, 2013)</h2>
+
+<ul>
+  <li>diff doesn’t calculate properly from working to resting day (#15) * Barrie Callender *</li>
+</ul>
+
+<h2 id="workpattern-v033-sep-23-2013">Workpattern v0.3.3 (Sep 23, 2013)</h2>
+
+<ul>
+  <li>Failed to subtract 1 minute from end of resting hour (#12) * Barrie Callender *</li>
+  <li>Failed to add minutes starting from a resting period in a patterned hour (#13) * Barrie Callender *</li>
+  <li>Failed to subtract the exact amount of minutes from a patterned hour (#14) * Barrie Callender *</li>
+  <li>The two tests no longer fail with Ruby 2.0 (#11) * Barrie Callender *</li>
+</ul>
+
+<h2 id="workpattern-v032-mar-14-2013">Workpattern v0.3.2 (Mar 14, 2013)</h2>
+
+<ul>
+  <li>Changed methods on Hour module so as to not clash with Rails (#10) * Barrie Callender *</li>
+  <li>Applied DRY principle to workpattern method in Workpattern class * Barrie Callender *</li>
+  <li>Removed file from emacs backup * Barrie Callender *</li>
+</ul>
+
+<h2 id="workpattern-v031-oct-14-2012">Workpattern v0.3.1 (Oct 14, 2012)</h2>
+
+<ul>
+  <li>RDOC documentation not right on rubydoc.info (#5) * Barrie Callender *</li>
+</ul>
+
+<h2 id="workpattern-v030-jul-19-2012">Workpattern v0.3.0 (Jul 19, 2012)</h2>
+
+<ul>
+  <li>incomplete tests for week (#2) * Barrie Callender *</li>
+  <li>getting wrong time when hour had exactly the right number of minutes (#9) * Barrie Callender *</li>
+  <li>jruby-19mode failed with SystemStackError: stack level too deep  (#8) * Barrie Callender *</li>
+  <li>midnight flag should override hour and minutes  (#7) * Barrie Callender *</li>
+  <li>available minutes not calculating correctly for a time of 00:01 (#6) * Barrie Callender *</li>
+</ul>
+
+<h2 id="workpattern-v020-may-31-2012">Workpattern v0.2.0 (May 31, 2012)</h2>
+
+<ul>
+  <li>Rewritten from scratch effectively first version * Barrie Callender *</li>
+  <li>Please discard any version of Workpattern before this - some poor souls may have come across v0.1.0. - sorry! * Barrie Callender *</li>
+</ul>
+
+
+</article>
+      </section>
+    </div>
+  </div>
+
+   <footer>
+  <a href="https://creativecommons.org/licenses/by-nc/3.0/deed.en_US">
+    <span>
+        <b>callenb</b>
+    </span>
+    
+    <span>© 2021</span>
+  </a>
+</footer>
+
+  
+</body>
+
+</html>
