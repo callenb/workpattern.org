@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Archive
+description: A complete list of all the posts on the Workpattern site
 ---
 
 <section>

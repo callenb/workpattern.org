@@ -4,7 +4,7 @@
 title: Workpattern Library
 email: barrie@callenb.org
 name: Workpattern Library
-description: "Calculates dates and durations whilst taking into account working and non-working times. It creates calendars similar to what you can find in project scheduling software like Microsoft project and Primavera P6."
+description: A library for calculating dates and durations based on working and resting times that can all go down to the nearest minute
 baseurl: ""
 url: "https://workpattern.org"
 

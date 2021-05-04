@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "Documentation"
+title: "Workpattern Rubygem Documentation"
 date: 2021-02-21T21:45:22+00:00
+description: "Documentation for the Workpattern Rubygem which calculates dates and durations based on customised working and resting patterns"
 ---
 # Workpattern [![Build Status](https://secure.travis-ci.org/callenb/workpattern.png)](https://secure.travis-ci.org/callenb/workpattern.png)
 

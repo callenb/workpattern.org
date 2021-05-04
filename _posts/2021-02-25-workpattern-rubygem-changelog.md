@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "CHANGELOG"
+title: "Workpattern Rubygem CHANGELOG"
 date: 2021-02-25T22:21:13+00:00
+description: The Changelog for the Workpattern Rubygem
 ---
 ## Workpattern v0.6.0 ( 21 Feb, 2021) ##
 
