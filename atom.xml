@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Workpattern Library</title>
-    <description>Calculates dates and durations whilst taking into account working and non-working times. It creates calendars similar to what you can find in project scheduling software like Microsoft project and Primavera P6.</description>
+    <description>A library for calculating dates and durations based on working and resting times that can all go down to the nearest minute</description>
     <link>https://workpattern.org</link>
     <atom:link href="https://workpattern.org/feed.xml" rel="self" type="application/rss+xml" />
     <author>
@@ -12,7 +12,7 @@
     </author>
     
       <item>
-        <title>CHANGELOG</title>
+        <title>Workpattern Rubygem CHANGELOG</title>
         <description>&lt;h2 id=&quot;workpattern-v060--21-feb-2021&quot;&gt;Workpattern v0.6.0 ( 21 Feb, 2021)&lt;/h2&gt;
 
 &lt;p&gt;I stopped keeping this Changelog file update back when v0.5.0 was realeased on 19 Oct 2016 and now it is 10Feb 2021 and I’m playing catch-up.
@@ -125,13 +125,13 @@ Here is a chronological take on what I have been doing.&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 25 Feb 2021 22:21:13 +0000</pubDate>
-        <link>https://workpattern.org//2021/02/25/changelog.html</link>
-        <link href="https://workpattern.org/2021/02/25/changelog.html"/>
-        <guid isPermaLink="true">https://workpattern.org/2021/02/25/changelog.html</guid>
+        <link>https://workpattern.org//2021/02/25/workpattern-rubygem-changelog.html</link>
+        <link href="https://workpattern.org/2021/02/25/workpattern-rubygem-changelog.html"/>
+        <guid isPermaLink="true">https://workpattern.org/2021/02/25/workpattern-rubygem-changelog.html</guid>
       </item>
     
       <item>
-        <title>Documentation</title>
+        <title>Workpattern Rubygem Documentation</title>
         <description>&lt;h1 id=&quot;workpattern-&quot;&gt;Workpattern &lt;a href=&quot;https://secure.travis-ci.org/callenb/workpattern.png&quot;&gt;&lt;img src=&quot;https://secure.travis-ci.org/callenb/workpattern.png&quot; alt=&quot;Build Status&quot; /&gt;&lt;/a&gt;&lt;/h1&gt;
 
 &lt;p&gt;Calculates dates and durations whilst taking into account working and non-working times.  It creates calendars similar to what you can find in project scheduling software like Microsoft project and Primavera P6.&lt;/p&gt;
@@ -240,9 +240,9 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&lt;/p&gt;
 </description>
         <pubDate>Sun, 21 Feb 2021 21:45:22 +0000</pubDate>
-        <link>https://workpattern.org//2021/02/21/documentation.html</link>
-        <link href="https://workpattern.org/2021/02/21/documentation.html"/>
-        <guid isPermaLink="true">https://workpattern.org/2021/02/21/documentation.html</guid>
+        <link>https://workpattern.org//2021/02/21/workpattern-rubygem-documentation.html</link>
+        <link href="https://workpattern.org/2021/02/21/workpattern-rubygem-documentation.html"/>
+        <guid isPermaLink="true">https://workpattern.org/2021/02/21/workpattern-rubygem-documentation.html</guid>
       </item>
     
   </channel>
