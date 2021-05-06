@@ -38,6 +38,7 @@ source: .
 destination: ./_site
 paginate: 10
 paginate_path: /page/:num/
+permalink: pretty
 
 defaults:
   -
