@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://workpattern.org/2021/02/21/workpattern-rubygem-documentation.html</loc>
+<loc>http://localhost:4000/2021/02/21/workpattern-rubygem-documentation/</loc>
 <lastmod>2021-05-04T20:12:42+01:00</lastmod>
 </url>
 <url>
-<loc>https://workpattern.org/2021/02/25/workpattern-rubygem-changelog.html</loc>
+<loc>http://localhost:4000/2021/02/25/workpattern-rubygem-changelog/</loc>
 <lastmod>2021-05-04T20:12:42+01:00</lastmod>
 </url>
 <url>
-<loc>https://workpattern.org/about.html</loc>
+<loc>http://localhost:4000/404/</loc>
+<lastmod>2021-02-15T20:08:27+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/about/</loc>
 <lastmod>2021-05-04T20:12:42+01:00</lastmod>
 </url>
 <url>
-<loc>https://workpattern.org/archive.html</loc>
+<loc>http://localhost:4000/archive/</loc>
 <lastmod>2021-05-04T20:12:42+01:00</lastmod>
 </url>
 <url>
-<loc>https://workpattern.org/</loc>
+<loc>http://localhost:4000/</loc>
 <lastmod>2021-02-15T20:08:27+00:00</lastmod>
 </url>
 </urlset>
