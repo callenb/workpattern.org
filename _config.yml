@@ -19,6 +19,19 @@ author:
   email: "barrie@callenb.org"
   url: "https://github.com/callenb"
 #------------------------------
+twitter:
+  username: callenb
+  card: summary
+
+social:
+  name: Barrie Callender
+  links:
+    - https://twitter.com/callenb
+    - https://www.facebook.com/barrie.callender
+    - https://www.linkedin.com/in/barriecallender
+    - https://github.com/callenb
+    - https://github.com/usingprimavera
+
 # Build settings
 #
 source: .
@@ -39,6 +52,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-last-modified-at
 
 # efault extensions for new posts and pages
 post_ext: md
