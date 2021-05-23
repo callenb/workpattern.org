@@ -131,4 +131,8 @@ a:active, a:focus { outline: 0; border: none; -moz-outline-style: none; }
 
 #wrapper { min-height: calc(100vh - 100px); }
 
+.share__link { color: #b5e853; background-color: #151515; }
+
+.share__link:hover { color: #6a9fb5; background-color: #151515; }
+
 /*# sourceMappingURL=main.css.map */
