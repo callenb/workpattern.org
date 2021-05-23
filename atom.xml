@@ -3,8 +3,8 @@
   <channel>
     <title>Workpattern Library</title>
     <description>A library for calculating dates and durations based on working and resting times that can all go down to the nearest minute</description>
-    <link>https://workpattern.org</link>
-    <atom:link href="https://workpattern.org/feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:4000</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     <author>
       <name>Barrie Callender</name>
       <email>barrie@callenb.org</email>
@@ -125,9 +125,9 @@ Here is a chronological take on what I have been doing.&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 25 Feb 2021 22:21:13 +0000</pubDate>
-        <link>https://workpattern.org//2021/02/25/workpattern-rubygem-changelog/</link>
-        <link href="https://workpattern.org/2021/02/25/workpattern-rubygem-changelog/"/>
-        <guid isPermaLink="true">https://workpattern.org/2021/02/25/workpattern-rubygem-changelog/</guid>
+        <link>http://localhost:4000//2021/02/25/workpattern-rubygem-changelog/</link>
+        <link href="http://localhost:4000/2021/02/25/workpattern-rubygem-changelog/"/>
+        <guid isPermaLink="true">http://localhost:4000/2021/02/25/workpattern-rubygem-changelog/</guid>
       </item>
     
       <item>
@@ -240,9 +240,9 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&lt;/p&gt;
 </description>
         <pubDate>Sun, 21 Feb 2021 21:45:22 +0000</pubDate>
-        <link>https://workpattern.org//2021/02/21/workpattern-rubygem-documentation/</link>
-        <link href="https://workpattern.org/2021/02/21/workpattern-rubygem-documentation/"/>
-        <guid isPermaLink="true">https://workpattern.org/2021/02/21/workpattern-rubygem-documentation/</guid>
+        <link>http://localhost:4000//2021/02/21/workpattern-rubygem-documentation/</link>
+        <link href="http://localhost:4000/2021/02/21/workpattern-rubygem-documentation/"/>
+        <guid isPermaLink="true">http://localhost:4000/2021/02/21/workpattern-rubygem-documentation/</guid>
       </item>
     
   </channel>
