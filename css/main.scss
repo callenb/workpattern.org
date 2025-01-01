@@ -1,12 +1,4 @@
 ---
 ---
-@import "base";
+@use "base";
 
-.share__link {
-        color: $conifer;
-        background-color: $cod-grey;
-        &:hover {
-          color: $hippie-blue;
-          background-color: $cod-grey;
-        }
-}
