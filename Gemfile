@@ -7,7 +7,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 4.0.1"
+gem "jekyll", "~> 4.3.4"
 
 # The them is a version of the git pages Hacker theme for a full blog
 # available here: https://github.com/tocttou/hacker-blog
