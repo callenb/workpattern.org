@@ -30,9 +30,9 @@
 <meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff"><link href="/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM Feed" /> 
   
-  <!-- Begin Jekyll SEO tag v2.7.1 -->
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Workpattern Rubygem Documentation | Workpattern Library</title>
-<meta name="generator" content="Jekyll v4.0.1" />
+<meta name="generator" content="Jekyll v4.3.4" />
 <meta property="og:title" content="Workpattern Rubygem Documentation" />
 <meta name="author" content="Barrie Callender" />
 <meta property="og:locale" content="en_US" />
@@ -48,7 +48,7 @@
 <meta name="twitter:site" content="@callenb" />
 <meta name="twitter:creator" content="@Barrie Callender" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"Barrie Callender"},"headline":"Workpattern Rubygem Documentation","dateModified":"2021-05-04T20:12:42+01:00","datePublished":"2021-02-21T21:45:22+00:00","description":"Documentation for the Workpattern Rubygem which calculates dates and durations based on customised working and resting patterns","mainEntityOfPage":{"@type":"WebPage","@id":"https://workpattern.org/2021/02/21/workpattern-rubygem-documentation/"},"@type":"BlogPosting","url":"https://workpattern.org/2021/02/21/workpattern-rubygem-documentation/","@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Barrie Callender","url":"https://github.com/callenb"},"dateModified":"2021-05-04T20:12:42+01:00","datePublished":"2021-02-21T21:45:22+00:00","description":"Documentation for the Workpattern Rubygem which calculates dates and durations based on customised working and resting patterns","headline":"Workpattern Rubygem Documentation","mainEntityOfPage":{"@type":"WebPage","@id":"https://workpattern.org/2021/02/21/workpattern-rubygem-documentation/"},"url":"https://workpattern.org/2021/02/21/workpattern-rubygem-documentation/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <script defer data-domain="workpattern.org" src="https://plausible.io/js/plausible.js"></script>
@@ -78,11 +78,11 @@
 
 <p>Calculates dates and durations whilst taking into account working and non-working times.  It creates calendars similar to what you can find in project scheduling software like Microsoft project and Primavera P6.</p>
 
-<p>Please use <a href="http://github.com/callenb/workpattern/issues">Github Issues</a> to report bugs.  If you have a question about the library, please use the <code class="highlighter-rouge">workpattern</code> tag on <a href="http://stackoverflow.com/questions/tagged/workpattern">Stack Overflow</a>.  This tag is monitored by contributors.</p>
+<p>Please use <a href="http://github.com/callenb/workpattern/issues">Github Issues</a> to report bugs.  If you have a question about the library, please use the <code class="language-plaintext highlighter-rouge">workpattern</code> tag on <a href="http://stackoverflow.com/questions/tagged/workpattern">Stack Overflow</a>.  This tag is monitored by contributors.</p>
 
 <h2 id="getting-started">Getting Started</h2>
 
-<p>Workpattern is a library with no monkey-patching and was tested using <a href="https://travis-ci.org">Travis</a> against the following Ruby versions <code class="highlighter-rouge">1.9.3</code>, <code class="highlighter-rouge">2.1</code>, <code class="highlighter-rouge">2.2</code>, <code class="highlighter-rouge">2.3</code>, <code class="highlighter-rouge">2.4</code>, <code class="highlighter-rouge">2.5</code>, <code class="highlighter-rouge">2.6</code>, <code class="highlighter-rouge">ruby-head (3.1.0dev)</code>, <code class="highlighter-rouge">jruby-19mode (9.2.9.0 (2.5.7)</code> and <code class="highlighter-rouge">jruby-head (9.3.0.0-SNAPSHOT (2.6.5)</code>.</p>
+<p>Workpattern is a library with no monkey-patching and was tested using <a href="https://travis-ci.org">Travis</a> against the following Ruby versions <code class="language-plaintext highlighter-rouge">1.9.3</code>, <code class="language-plaintext highlighter-rouge">2.1</code>, <code class="language-plaintext highlighter-rouge">2.2</code>, <code class="language-plaintext highlighter-rouge">2.3</code>, <code class="language-plaintext highlighter-rouge">2.4</code>, <code class="language-plaintext highlighter-rouge">2.5</code>, <code class="language-plaintext highlighter-rouge">2.6</code>, <code class="language-plaintext highlighter-rouge">ruby-head (3.1.0dev)</code>, <code class="language-plaintext highlighter-rouge">jruby-19mode (9.2.9.0 (2.5.7)</code> and <code class="language-plaintext highlighter-rouge">jruby-head (9.3.0.0-SNAPSHOT (2.6.5)</code>.</p>
 
 <p>You can install it using:</p>
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="nb">install </span>workpattern
@@ -99,26 +99,26 @@
 
 <h2 id="configure-and-calculate">Configure and Calculate</h2>
 
-<p>First create a <code class="highlighter-rouge">Workpattern</code> to hold all the working and resting times.</p>
+<p>First create a <code class="language-plaintext highlighter-rouge">Workpattern</code> to hold all the working and resting times.</p>
 
 <div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mywp</span><span class="o">=</span><span class="no">Workpattern</span><span class="p">.</span><span class="nf">new</span> <span class="s1">'My Workpattern'</span><span class="p">,</span><span class="mi">2011</span><span class="p">,</span><span class="mi">10</span> 
 </code></pre></div></div>
-<p>That line created a <code class="highlighter-rouge">Workpattern</code> called <code class="highlighter-rouge">My Workpattern</code> starting on 1-Jan-2011 and continuing for <code class="highlighter-rouge">10</code> years until <code class="highlighter-rouge">2020</code>.</p>
+<p>That line created a <code class="language-plaintext highlighter-rouge">Workpattern</code> called <code class="language-plaintext highlighter-rouge">My Workpattern</code> starting on 1-Jan-2011 and continuing for <code class="language-plaintext highlighter-rouge">10</code> years until <code class="language-plaintext highlighter-rouge">2020</code>.</p>
 
-<p><code class="highlighter-rouge">mywp</code> is created with a 24 hour a day working time.  Next step is to tell it to ignore weekends by making every Saturday and Sunday non-working.</p>
+<p><code class="language-plaintext highlighter-rouge">mywp</code> is created with a 24 hour a day working time.  Next step is to tell it to ignore weekends by making every Saturday and Sunday non-working.</p>
 
 <div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mywp</span><span class="p">.</span><span class="nf">resting</span> <span class="ss">:days</span> <span class="o">=&gt;</span> <span class="ss">:weekend</span> 
 </code></pre></div></div>
 
-<p>The <code class="highlighter-rouge">Workpattern.clock</code> method can be used to specify the non-working times for each weekday.  Any class that responds to <code class="highlighter-rouge">#hour</code> and <code class="highlighter-rouge">#min</code> methods such as <code class="highlighter-rouge">Time</code> or <code class="highlighter-rouge">DateTime</code> can be used instead of <code class="highlighter-rouge">Workpattern.clock</code>.</p>
+<p>The <code class="language-plaintext highlighter-rouge">Workpattern.clock</code> method can be used to specify the non-working times for each weekday.  Any class that responds to <code class="language-plaintext highlighter-rouge">#hour</code> and <code class="language-plaintext highlighter-rouge">#min</code> methods such as <code class="language-plaintext highlighter-rouge">Time</code> or <code class="language-plaintext highlighter-rouge">DateTime</code> can be used instead of <code class="language-plaintext highlighter-rouge">Workpattern.clock</code>.</p>
 
 <div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mywp</span><span class="p">.</span><span class="nf">resting</span> <span class="ss">:days</span> <span class="o">=&gt;</span><span class="ss">:weekday</span><span class="p">,</span> <span class="ss">:from_time</span><span class="o">=&gt;</span><span class="no">Workpattern</span><span class="p">.</span><span class="nf">clock</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span><span class="ss">:to_time</span><span class="o">=&gt;</span><span class="no">Workpattern</span><span class="p">.</span><span class="nf">clock</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">59</span><span class="p">)</span> 
 <span class="n">mywp</span><span class="p">.</span><span class="nf">resting</span> <span class="ss">:days</span> <span class="o">=&gt;</span><span class="ss">:weekday</span><span class="p">,</span> <span class="ss">:from_time</span><span class="o">=&gt;</span><span class="no">Workpattern</span><span class="p">.</span><span class="nf">clock</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span><span class="ss">:to_time</span><span class="o">=&gt;</span><span class="no">Workpattern</span><span class="p">.</span><span class="nf">clock</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">59</span><span class="p">)</span> 
 <span class="n">mywp</span><span class="p">.</span><span class="nf">resting</span> <span class="ss">:days</span> <span class="o">=&gt;</span><span class="ss">:weekday</span><span class="p">,</span> <span class="ss">:from_time</span><span class="o">=&gt;</span><span class="no">Workpattern</span><span class="p">.</span><span class="nf">clock</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span><span class="ss">:to_time</span><span class="o">=&gt;</span><span class="no">Workpattern</span><span class="p">.</span><span class="nf">clock</span><span class="p">(</span><span class="mi">23</span><span class="p">,</span><span class="mi">59</span><span class="p">)</span> 
 </code></pre></div></div>
-<p>As well as <code class="highlighter-rouge">:weekend</code> and <code class="highlighter-rouge">:weekday</code> it is possible to use <code class="highlighter-rouge">:mon</code>, <code class="highlighter-rouge">:tue</code>, <code class="highlighter-rouge">:wed</code>, <code class="highlighter-rouge">:thu</code>, <code class="highlighter-rouge">:fri</code>, <code class="highlighter-rouge">:sat</code>, <code class="highlighter-rouge">:sun</code> or <code class="highlighter-rouge">all</code>.</p>
+<p>As well as <code class="language-plaintext highlighter-rouge">:weekend</code> and <code class="language-plaintext highlighter-rouge">:weekday</code> it is possible to use <code class="language-plaintext highlighter-rouge">:mon</code>, <code class="language-plaintext highlighter-rouge">:tue</code>, <code class="language-plaintext highlighter-rouge">:wed</code>, <code class="language-plaintext highlighter-rouge">:thu</code>, <code class="language-plaintext highlighter-rouge">:fri</code>, <code class="language-plaintext highlighter-rouge">:sat</code>, <code class="language-plaintext highlighter-rouge">:sun</code> or <code class="language-plaintext highlighter-rouge">all</code>.</p>
 
-<p>With <code class="highlighter-rouge">mywp</code> setup, the <code class="highlighter-rouge">#calc</code> method is used to add 32 hours which must be supplied as the number of whole minutes (1920) to a date.</p>
+<p>With <code class="language-plaintext highlighter-rouge">mywp</code> setup, the <code class="language-plaintext highlighter-rouge">#calc</code> method is used to add 32 hours which must be supplied as the number of whole minutes (1920) to a date.</p>
 
 <div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_date</span><span class="o">=</span><span class="no">Time</span><span class="p">.</span><span class="nf">gm</span> <span class="mi">2011</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">0</span> 
 <span class="n">result_date</span> <span class="o">=</span> <span class="n">mywp</span><span class="p">.</span><span class="nf">calc</span> <span class="n">my_date</span><span class="p">,</span><span class="mi">1920</span>  <span class="c1"># =&gt; 6/9/11@18:00</span>
@@ -126,14 +126,14 @@
 
 <p>The result takes into account the non-working or resting times.</p>
 
-<p>Subtracting a date is just as easy by using a negative number of minutes in <code class="highlighter-rouge">#calc</code>.</p>
+<p>Subtracting a date is just as easy by using a negative number of minutes in <code class="language-plaintext highlighter-rouge">#calc</code>.</p>
 
-<p>Finding the duration between two dates is also easy using the <code class="highlighter-rouge">#diff</code> method.</p>
+<p>Finding the duration between two dates is also easy using the <code class="language-plaintext highlighter-rouge">#diff</code> method.</p>
 
 <div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">diff_result</span> <span class="o">=</span> <span class="n">mywp</span><span class="p">.</span><span class="nf">diff</span> <span class="n">my_date</span><span class="p">,</span> <span class="n">result_date</span>  <span class="c1"># =&gt; 1920</span>
 </code></pre></div></div>
 
-<p>Vacations can be added to the <code class="highlighter-rouge">Workpattern</code> using the <code class="highlighter-rouge">#resting</code> method:</p>
+<p>Vacations can be added to the <code class="language-plaintext highlighter-rouge">Workpattern</code> using the <code class="language-plaintext highlighter-rouge">#resting</code> method:</p>
 
 <div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mywp</span><span class="p">.</span><span class="nf">resting</span> <span class="ss">:days</span> <span class="o">=&gt;</span> <span class="ss">:all</span><span class="p">,</span> <span class="ss">:start</span> <span class="o">=&gt;</span> <span class="no">DateTime</span><span class="p">.</span><span class="nf">civil</span><span class="p">(</span><span class="mi">2011</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="ss">:finish</span> <span class="o">=&gt;</span> <span class="no">DateTime</span><span class="p">.</span><span class="nf">civil</span><span class="p">(</span><span class="mi">2011</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">)</span>
 </code></pre></div></div>
@@ -215,7 +215,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
         <b>callenb</b>
     </span>
     
-    <span>© 2021</span>
+    <span>© 2025</span>
   </a>
 </footer>
 

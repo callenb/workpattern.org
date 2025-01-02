@@ -1,214 +1,214 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="https://workpattern.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://workpattern.org/" rel="alternate" type="text/html" /><updated>2021-08-15T10:27:38+01:00</updated><id>https://workpattern.org/feed.xml</id><title type="html">Workpattern Library</title><subtitle>A library for calculating dates and durations based on working and resting times that can all go down to the nearest minute</subtitle><author><name>Barrie Callender</name><email>barrie@callenb.org</email></author><entry><title type="html">Workpattern Rubygem CHANGELOG</title><link href="https://workpattern.org/2021/02/25/workpattern-rubygem-changelog/" rel="alternate" type="text/html" title="Workpattern Rubygem CHANGELOG" /><published>2021-02-25T22:21:13+00:00</published><updated>2021-05-04T20:12:42+01:00</updated><id>https://workpattern.org/2021/02/25/workpattern-rubygem-changelog</id><content type="html" xml:base="https://workpattern.org/2021/02/25/workpattern-rubygem-changelog/">&lt;h2 id=&quot;workpattern-v060--21-feb-2021&quot;&gt;Workpattern v0.6.0 ( 21 Feb, 2021)&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="https://workpattern.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://workpattern.org/" rel="alternate" type="text/html" /><updated>2025-01-02T17:11:46+00:00</updated><id>https://workpattern.org/feed.xml</id><title type="html">Workpattern Library</title><subtitle>A library for calculating dates and durations based on working and resting times that can all go down to the nearest minute</subtitle><author><name>Barrie Callender</name><email>barrie@callenb.org</email></author><entry><title type="html">Workpattern Rubygem CHANGELOG</title><link href="https://workpattern.org/2021/02/25/workpattern-rubygem-changelog/" rel="alternate" type="text/html" title="Workpattern Rubygem CHANGELOG" /><published>2021-02-25T22:21:13+00:00</published><updated>2021-05-04T20:12:42+01:00</updated><id>https://workpattern.org/2021/02/25/workpattern-rubygem-changelog</id><content type="html" xml:base="https://workpattern.org/2021/02/25/workpattern-rubygem-changelog/"><![CDATA[<h2 id="workpattern-v060--21-feb-2021">Workpattern v0.6.0 ( 21 Feb, 2021)</h2>
 
-&lt;p&gt;I stopped keeping this Changelog file update back when v0.5.0 was realeased on 19 Oct 2016 and now it is 10Feb 2021 and I’m playing catch-up.
-I have created the following set of bullet point changes by going through my commit messages, the quality of which varies greatly.&lt;br /&gt;
+<p>I stopped keeping this Changelog file update back when v0.5.0 was realeased on 19 Oct 2016 and now it is 10Feb 2021 and I’m playing catch-up.
+I have created the following set of bullet point changes by going through my commit messages, the quality of which varies greatly.<br />
 A lot of the effort has been on making the code easier to read as it was a real mess.
-Here is a chronological take on what I have been doing.&lt;/p&gt;
+Here is a chronological take on what I have been doing.</p>
 
-&lt;ul&gt;
-  &lt;li&gt;removed test warnings by surrounding ambiguous negatives with parenthesis&lt;/li&gt;
-  &lt;li&gt;I think a bug was fixed by changing #wee_total and #total to just an attr_writer&lt;/li&gt;
-  &lt;li&gt;removed some duplicated code&lt;/li&gt;
-  &lt;li&gt;replaced a number of literals with constants which I put in their own file&lt;/li&gt;
-  &lt;li&gt;made a lot of the code easier to read, such as extracting to a method with a sensible name or renaming existing ones&lt;/li&gt;
-  &lt;li&gt;Workpattern is now tested on Ruby 1.9.3, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, ruby-head, jruby-19mode &amp;amp; jruby-head&lt;/li&gt;
-  &lt;li&gt;Created a Day class to remove the complexity from Week so Week deals with weeks and Day with a day&lt;/li&gt;
-  &lt;li&gt;My Clock class was replaced by Time or Date objects in all tests.  Clock only used for internal stuff now.&lt;/li&gt;
-  &lt;li&gt;Switched to sorted_set rubygem after the SortedSet class was removed from Ruby in v3.x.&lt;/li&gt;
-  &lt;li&gt;Workpattern now works with ruby 3.0.1dev&lt;/li&gt;
-  &lt;li&gt;added Contributor Covenant Code of Conduct&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>removed test warnings by surrounding ambiguous negatives with parenthesis</li>
+  <li>I think a bug was fixed by changing #wee_total and #total to just an attr_writer</li>
+  <li>removed some duplicated code</li>
+  <li>replaced a number of literals with constants which I put in their own file</li>
+  <li>made a lot of the code easier to read, such as extracting to a method with a sensible name or renaming existing ones</li>
+  <li>Workpattern is now tested on Ruby 1.9.3, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, ruby-head, jruby-19mode &amp; jruby-head</li>
+  <li>Created a Day class to remove the complexity from Week so Week deals with weeks and Day with a day</li>
+  <li>My Clock class was replaced by Time or Date objects in all tests.  Clock only used for internal stuff now.</li>
+  <li>Switched to sorted_set rubygem after the SortedSet class was removed from Ruby in v3.x.</li>
+  <li>Workpattern now works with ruby 3.0.1dev</li>
+  <li>added Contributor Covenant Code of Conduct</li>
+</ul>
 
-&lt;h2 id=&quot;workpattern-v050--oct-19-2016&quot;&gt;Workpattern v0.5.0 ( Oct 19, 2016)&lt;/h2&gt;
+<h2 id="workpattern-v050--oct-19-2016">Workpattern v0.5.0 ( Oct 19, 2016)</h2>
 
-&lt;ul&gt;
-  &lt;li&gt;Workpattern now handles Timezones.  It changes the date into UTC, does the calculation and then changes it back * Barrie Callender&lt;/li&gt;
-  &lt;li&gt;Removed Day class and associated tests as it is no longer used * Barrie Callender&lt;/li&gt;
-  &lt;li&gt;Reviewed the README and removed a lot of cruft and also updated it a little to demonstrate features * Barrie Callender&lt;/li&gt;
-  &lt;li&gt;Hid documentation unless it was part of the public api * Barrie Callender&lt;/li&gt;
-  &lt;li&gt;Used Rubocop to help me be more consistent.  I ignored some of the offences to do with long lines/methods and classes * Barrie Callender&lt;/li&gt;
-  &lt;li&gt;Code makes use of Time objects where it use to use DateTime.  Time comes with a Timezone * Barrie Callender&lt;/li&gt;
-  &lt;li&gt;Rewrote/refactored methods in the Week class - which needs refactoring into new classes * Barrie Callender&lt;/li&gt;
-  &lt;li&gt;Removed rubyforge_project from workpattern.gemspec * Barrie Callender&lt;/li&gt;
-  &lt;li&gt;Added homepage &amp;amp; required_ruby_version to workpattern.gemspec * Barrie Callender&lt;/li&gt;
-  &lt;li&gt;Added versions to test in Travis CI to include 1.9.3, 2.0.0, 2.1.0, 2.1.9, 2.2.0, 2.2.5, 2.3.0 &amp;amp; 2.3.1 * Barrie Callender&lt;/li&gt;
-  &lt;li&gt;Dealt with Travis CI issue with version of bundler * Barrie Callender&lt;/li&gt;
-  &lt;li&gt;Removed config directory &amp;amp; contents * Barrie Callender&lt;/li&gt;
-  &lt;li&gt;Changed Description * barrie Callender&lt;/li&gt;
-  &lt;li&gt;Specified minitest ~&amp;gt; 5.4.3 due to an issue I no longer recall * Barrie Callender&lt;/li&gt;
-  &lt;li&gt;Hid all the documentation apart from public api * Barrie Callender&lt;/li&gt;
-  &lt;li&gt;improved the README.md (IMHO) * Barrie Callender&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>Workpattern now handles Timezones.  It changes the date into UTC, does the calculation and then changes it back * Barrie Callender</li>
+  <li>Removed Day class and associated tests as it is no longer used * Barrie Callender</li>
+  <li>Reviewed the README and removed a lot of cruft and also updated it a little to demonstrate features * Barrie Callender</li>
+  <li>Hid documentation unless it was part of the public api * Barrie Callender</li>
+  <li>Used Rubocop to help me be more consistent.  I ignored some of the offences to do with long lines/methods and classes * Barrie Callender</li>
+  <li>Code makes use of Time objects where it use to use DateTime.  Time comes with a Timezone * Barrie Callender</li>
+  <li>Rewrote/refactored methods in the Week class - which needs refactoring into new classes * Barrie Callender</li>
+  <li>Removed rubyforge_project from workpattern.gemspec * Barrie Callender</li>
+  <li>Added homepage &amp; required_ruby_version to workpattern.gemspec * Barrie Callender</li>
+  <li>Added versions to test in Travis CI to include 1.9.3, 2.0.0, 2.1.0, 2.1.9, 2.2.0, 2.2.5, 2.3.0 &amp; 2.3.1 * Barrie Callender</li>
+  <li>Dealt with Travis CI issue with version of bundler * Barrie Callender</li>
+  <li>Removed config directory &amp; contents * Barrie Callender</li>
+  <li>Changed Description * barrie Callender</li>
+  <li>Specified minitest ~&gt; 5.4.3 due to an issue I no longer recall * Barrie Callender</li>
+  <li>Hid all the documentation apart from public api * Barrie Callender</li>
+  <li>improved the README.md (IMHO) * Barrie Callender</li>
+</ul>
 
-&lt;h2 id=&quot;workpattern-v040--may-23-2014&quot;&gt;Workpattern v0.4.0 ( May 23, 2014)&lt;/h2&gt;
+<h2 id="workpattern-v040--may-23-2014">Workpattern v0.4.0 ( May 23, 2014)</h2>
 
-&lt;ul&gt;
-  &lt;li&gt;Updated Week class to use bits and removed Day and Hour class as a consequence * Barrie Callender *&lt;/li&gt;
-  &lt;li&gt;This resulted in a performance improvement and some new tests&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>Updated Week class to use bits and removed Day and Hour class as a consequence * Barrie Callender *</li>
+  <li>This resulted in a performance improvement and some new tests</li>
+</ul>
 
-&lt;h2 id=&quot;workpattern-v036-mar-25-2014&quot;&gt;Workpattern v0.3.6 (Mar 25, 2014)&lt;/h2&gt;
+<h2 id="workpattern-v036-mar-25-2014">Workpattern v0.3.6 (Mar 25, 2014)</h2>
 
-&lt;ul&gt;
-  &lt;li&gt;total minutes of week is zero when short week starting after Sunday (#17) * Barrie Callender *&lt;/li&gt;
-  &lt;li&gt;Subtracting starting from top of the hour and last minute is non working (#18) * Barrie Callender *&lt;/li&gt;
-  &lt;li&gt;Refactorings intended to make the code easier to read and easier to change - still more to do * Barrie Callender *&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>total minutes of week is zero when short week starting after Sunday (#17) * Barrie Callender *</li>
+  <li>Subtracting starting from top of the hour and last minute is non working (#18) * Barrie Callender *</li>
+  <li>Refactorings intended to make the code easier to read and easier to change - still more to do * Barrie Callender *</li>
+</ul>
 
-&lt;h2 id=&quot;workpattern-v035-sep-30-2013&quot;&gt;Workpattern v0.3.5 (Sep 30, 2013)&lt;/h2&gt;
+<h2 id="workpattern-v035-sep-30-2013">Workpattern v0.3.5 (Sep 30, 2013)</h2>
 
-&lt;ul&gt;
-  &lt;li&gt;License missing from gemspec (#16) * Barrie Callender *&lt;/li&gt;
-  &lt;li&gt;Removed Gemfile.lock from git and updated .gitignore to the bundler defaults * Barrie Callender *&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>License missing from gemspec (#16) * Barrie Callender *</li>
+  <li>Removed Gemfile.lock from git and updated .gitignore to the bundler defaults * Barrie Callender *</li>
+</ul>
 
-&lt;h2 id=&quot;workpattern-v034-sep-27-2013&quot;&gt;Workpattern v0.3.4 (Sep 27, 2013)&lt;/h2&gt;
+<h2 id="workpattern-v034-sep-27-2013">Workpattern v0.3.4 (Sep 27, 2013)</h2>
 
-&lt;ul&gt;
-  &lt;li&gt;diff doesn’t calculate properly from working to resting day (#15) * Barrie Callender *&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>diff doesn’t calculate properly from working to resting day (#15) * Barrie Callender *</li>
+</ul>
 
-&lt;h2 id=&quot;workpattern-v033-sep-23-2013&quot;&gt;Workpattern v0.3.3 (Sep 23, 2013)&lt;/h2&gt;
+<h2 id="workpattern-v033-sep-23-2013">Workpattern v0.3.3 (Sep 23, 2013)</h2>
 
-&lt;ul&gt;
-  &lt;li&gt;Failed to subtract 1 minute from end of resting hour (#12) * Barrie Callender *&lt;/li&gt;
-  &lt;li&gt;Failed to add minutes starting from a resting period in a patterned hour (#13) * Barrie Callender *&lt;/li&gt;
-  &lt;li&gt;Failed to subtract the exact amount of minutes from a patterned hour (#14) * Barrie Callender *&lt;/li&gt;
-  &lt;li&gt;The two tests no longer fail with Ruby 2.0 (#11) * Barrie Callender *&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>Failed to subtract 1 minute from end of resting hour (#12) * Barrie Callender *</li>
+  <li>Failed to add minutes starting from a resting period in a patterned hour (#13) * Barrie Callender *</li>
+  <li>Failed to subtract the exact amount of minutes from a patterned hour (#14) * Barrie Callender *</li>
+  <li>The two tests no longer fail with Ruby 2.0 (#11) * Barrie Callender *</li>
+</ul>
 
-&lt;h2 id=&quot;workpattern-v032-mar-14-2013&quot;&gt;Workpattern v0.3.2 (Mar 14, 2013)&lt;/h2&gt;
+<h2 id="workpattern-v032-mar-14-2013">Workpattern v0.3.2 (Mar 14, 2013)</h2>
 
-&lt;ul&gt;
-  &lt;li&gt;Changed methods on Hour module so as to not clash with Rails (#10) * Barrie Callender *&lt;/li&gt;
-  &lt;li&gt;Applied DRY principle to workpattern method in Workpattern class * Barrie Callender *&lt;/li&gt;
-  &lt;li&gt;Removed file from emacs backup * Barrie Callender *&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>Changed methods on Hour module so as to not clash with Rails (#10) * Barrie Callender *</li>
+  <li>Applied DRY principle to workpattern method in Workpattern class * Barrie Callender *</li>
+  <li>Removed file from emacs backup * Barrie Callender *</li>
+</ul>
 
-&lt;h2 id=&quot;workpattern-v031-oct-14-2012&quot;&gt;Workpattern v0.3.1 (Oct 14, 2012)&lt;/h2&gt;
+<h2 id="workpattern-v031-oct-14-2012">Workpattern v0.3.1 (Oct 14, 2012)</h2>
 
-&lt;ul&gt;
-  &lt;li&gt;RDOC documentation not right on rubydoc.info (#5) * Barrie Callender *&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>RDOC documentation not right on rubydoc.info (#5) * Barrie Callender *</li>
+</ul>
 
-&lt;h2 id=&quot;workpattern-v030-jul-19-2012&quot;&gt;Workpattern v0.3.0 (Jul 19, 2012)&lt;/h2&gt;
+<h2 id="workpattern-v030-jul-19-2012">Workpattern v0.3.0 (Jul 19, 2012)</h2>
 
-&lt;ul&gt;
-  &lt;li&gt;incomplete tests for week (#2) * Barrie Callender *&lt;/li&gt;
-  &lt;li&gt;getting wrong time when hour had exactly the right number of minutes (#9) * Barrie Callender *&lt;/li&gt;
-  &lt;li&gt;jruby-19mode failed with SystemStackError: stack level too deep  (#8) * Barrie Callender *&lt;/li&gt;
-  &lt;li&gt;midnight flag should override hour and minutes  (#7) * Barrie Callender *&lt;/li&gt;
-  &lt;li&gt;available minutes not calculating correctly for a time of 00:01 (#6) * Barrie Callender *&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>incomplete tests for week (#2) * Barrie Callender *</li>
+  <li>getting wrong time when hour had exactly the right number of minutes (#9) * Barrie Callender *</li>
+  <li>jruby-19mode failed with SystemStackError: stack level too deep  (#8) * Barrie Callender *</li>
+  <li>midnight flag should override hour and minutes  (#7) * Barrie Callender *</li>
+  <li>available minutes not calculating correctly for a time of 00:01 (#6) * Barrie Callender *</li>
+</ul>
 
-&lt;h2 id=&quot;workpattern-v020-may-31-2012&quot;&gt;Workpattern v0.2.0 (May 31, 2012)&lt;/h2&gt;
+<h2 id="workpattern-v020-may-31-2012">Workpattern v0.2.0 (May 31, 2012)</h2>
 
-&lt;ul&gt;
-  &lt;li&gt;Rewritten from scratch effectively first version * Barrie Callender *&lt;/li&gt;
-  &lt;li&gt;Please discard any version of Workpattern before this - some poor souls may have come across v0.1.0. - sorry! * Barrie Callender *&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Barrie Callender</name><email>barrie@callenb.org</email></author><summary type="html">Workpattern v0.6.0 ( 21 Feb, 2021)</summary></entry><entry><title type="html">Workpattern Rubygem Documentation</title><link href="https://workpattern.org/2021/02/21/workpattern-rubygem-documentation/" rel="alternate" type="text/html" title="Workpattern Rubygem Documentation" /><published>2021-02-21T21:45:22+00:00</published><updated>2021-05-04T20:12:42+01:00</updated><id>https://workpattern.org/2021/02/21/workpattern-rubygem-documentation</id><content type="html" xml:base="https://workpattern.org/2021/02/21/workpattern-rubygem-documentation/">&lt;h1 id=&quot;workpattern-&quot;&gt;Workpattern &lt;a href=&quot;https://secure.travis-ci.org/callenb/workpattern.png&quot;&gt;&lt;img src=&quot;https://secure.travis-ci.org/callenb/workpattern.png&quot; alt=&quot;Build Status&quot; /&gt;&lt;/a&gt;&lt;/h1&gt;
+<ul>
+  <li>Rewritten from scratch effectively first version * Barrie Callender *</li>
+  <li>Please discard any version of Workpattern before this - some poor souls may have come across v0.1.0. - sorry! * Barrie Callender *</li>
+</ul>]]></content><author><name>Barrie Callender</name><email>barrie@callenb.org</email></author><summary type="html"><![CDATA[The Changelog for the Workpattern Rubygem]]></summary></entry><entry><title type="html">Workpattern Rubygem Documentation</title><link href="https://workpattern.org/2021/02/21/workpattern-rubygem-documentation/" rel="alternate" type="text/html" title="Workpattern Rubygem Documentation" /><published>2021-02-21T21:45:22+00:00</published><updated>2021-05-04T20:12:42+01:00</updated><id>https://workpattern.org/2021/02/21/workpattern-rubygem-documentation</id><content type="html" xml:base="https://workpattern.org/2021/02/21/workpattern-rubygem-documentation/"><![CDATA[<h1 id="workpattern-">Workpattern <a href="https://secure.travis-ci.org/callenb/workpattern.png"><img src="https://secure.travis-ci.org/callenb/workpattern.png" alt="Build Status" /></a></h1>
 
-&lt;p&gt;Calculates dates and durations whilst taking into account working and non-working times.  It creates calendars similar to what you can find in project scheduling software like Microsoft project and Primavera P6.&lt;/p&gt;
+<p>Calculates dates and durations whilst taking into account working and non-working times.  It creates calendars similar to what you can find in project scheduling software like Microsoft project and Primavera P6.</p>
 
-&lt;p&gt;Please use &lt;a href=&quot;http://github.com/callenb/workpattern/issues&quot;&gt;Github Issues&lt;/a&gt; to report bugs.  If you have a question about the library, please use the &lt;code class=&quot;highlighter-rouge&quot;&gt;workpattern&lt;/code&gt; tag on &lt;a href=&quot;http://stackoverflow.com/questions/tagged/workpattern&quot;&gt;Stack Overflow&lt;/a&gt;.  This tag is monitored by contributors.&lt;/p&gt;
+<p>Please use <a href="http://github.com/callenb/workpattern/issues">Github Issues</a> to report bugs.  If you have a question about the library, please use the <code class="language-plaintext highlighter-rouge">workpattern</code> tag on <a href="http://stackoverflow.com/questions/tagged/workpattern">Stack Overflow</a>.  This tag is monitored by contributors.</p>
 
-&lt;h2 id=&quot;getting-started&quot;&gt;Getting Started&lt;/h2&gt;
+<h2 id="getting-started">Getting Started</h2>
 
-&lt;p&gt;Workpattern is a library with no monkey-patching and was tested using &lt;a href=&quot;https://travis-ci.org&quot;&gt;Travis&lt;/a&gt; against the following Ruby versions &lt;code class=&quot;highlighter-rouge&quot;&gt;1.9.3&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;2.1&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;2.2&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;2.3&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;2.4&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;2.5&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;2.6&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ruby-head (3.1.0dev)&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;jruby-19mode (9.2.9.0 (2.5.7)&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;jruby-head (9.3.0.0-SNAPSHOT (2.6.5)&lt;/code&gt;.&lt;/p&gt;
+<p>Workpattern is a library with no monkey-patching and was tested using <a href="https://travis-ci.org">Travis</a> against the following Ruby versions <code class="language-plaintext highlighter-rouge">1.9.3</code>, <code class="language-plaintext highlighter-rouge">2.1</code>, <code class="language-plaintext highlighter-rouge">2.2</code>, <code class="language-plaintext highlighter-rouge">2.3</code>, <code class="language-plaintext highlighter-rouge">2.4</code>, <code class="language-plaintext highlighter-rouge">2.5</code>, <code class="language-plaintext highlighter-rouge">2.6</code>, <code class="language-plaintext highlighter-rouge">ruby-head (3.1.0dev)</code>, <code class="language-plaintext highlighter-rouge">jruby-19mode (9.2.9.0 (2.5.7)</code> and <code class="language-plaintext highlighter-rouge">jruby-head (9.3.0.0-SNAPSHOT (2.6.5)</code>.</p>
 
-&lt;p&gt;You can install it using:&lt;/p&gt;
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;workpattern
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<p>You can install it using:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="nb">install </span>workpattern
+</code></pre></div></div>
 
-&lt;p&gt;Or you can add it to your Gemfile with:&lt;/p&gt;
+<p>Or you can add it to your Gemfile with:</p>
 
-&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem &lt;span class=&quot;s2&quot;&gt;&quot;workpattern&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="s2">"workpattern"</span>
+</code></pre></div></div>
 
-&lt;p&gt;Then run the bundle command to install it.&lt;/p&gt;
+<p>Then run the bundle command to install it.</p>
 
-&lt;h2 id=&quot;use&quot;&gt;Use&lt;/h2&gt;
+<h2 id="use">Use</h2>
 
-&lt;h2 id=&quot;configure-and-calculate&quot;&gt;Configure and Calculate&lt;/h2&gt;
+<h2 id="configure-and-calculate">Configure and Calculate</h2>
 
-&lt;p&gt;First create a &lt;code class=&quot;highlighter-rouge&quot;&gt;Workpattern&lt;/code&gt; to hold all the working and resting times.&lt;/p&gt;
+<p>First create a <code class="language-plaintext highlighter-rouge">Workpattern</code> to hold all the working and resting times.</p>
 
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;mywp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Workpattern&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'My Workpattern'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2011&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;That line created a &lt;code class=&quot;highlighter-rouge&quot;&gt;Workpattern&lt;/code&gt; called &lt;code class=&quot;highlighter-rouge&quot;&gt;My Workpattern&lt;/code&gt; starting on 1-Jan-2011 and continuing for &lt;code class=&quot;highlighter-rouge&quot;&gt;10&lt;/code&gt; years until &lt;code class=&quot;highlighter-rouge&quot;&gt;2020&lt;/code&gt;.&lt;/p&gt;
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mywp</span><span class="o">=</span><span class="no">Workpattern</span><span class="p">.</span><span class="nf">new</span> <span class="s1">'My Workpattern'</span><span class="p">,</span><span class="mi">2011</span><span class="p">,</span><span class="mi">10</span> 
+</code></pre></div></div>
+<p>That line created a <code class="language-plaintext highlighter-rouge">Workpattern</code> called <code class="language-plaintext highlighter-rouge">My Workpattern</code> starting on 1-Jan-2011 and continuing for <code class="language-plaintext highlighter-rouge">10</code> years until <code class="language-plaintext highlighter-rouge">2020</code>.</p>
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;mywp&lt;/code&gt; is created with a 24 hour a day working time.  Next step is to tell it to ignore weekends by making every Saturday and Sunday non-working.&lt;/p&gt;
+<p><code class="language-plaintext highlighter-rouge">mywp</code> is created with a 24 hour a day working time.  Next step is to tell it to ignore weekends by making every Saturday and Sunday non-working.</p>
 
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;mywp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;resting&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:days&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:weekend&lt;/span&gt; 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mywp</span><span class="p">.</span><span class="nf">resting</span> <span class="ss">:days</span> <span class="o">=&gt;</span> <span class="ss">:weekend</span> 
+</code></pre></div></div>
 
-&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;Workpattern.clock&lt;/code&gt; method can be used to specify the non-working times for each weekday.  Any class that responds to &lt;code class=&quot;highlighter-rouge&quot;&gt;#hour&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;#min&lt;/code&gt; methods such as &lt;code class=&quot;highlighter-rouge&quot;&gt;Time&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;DateTime&lt;/code&gt; can be used instead of &lt;code class=&quot;highlighter-rouge&quot;&gt;Workpattern.clock&lt;/code&gt;.&lt;/p&gt;
+<p>The <code class="language-plaintext highlighter-rouge">Workpattern.clock</code> method can be used to specify the non-working times for each weekday.  Any class that responds to <code class="language-plaintext highlighter-rouge">#hour</code> and <code class="language-plaintext highlighter-rouge">#min</code> methods such as <code class="language-plaintext highlighter-rouge">Time</code> or <code class="language-plaintext highlighter-rouge">DateTime</code> can be used instead of <code class="language-plaintext highlighter-rouge">Workpattern.clock</code>.</p>
 
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;mywp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;resting&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:days&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:weekday&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:from_time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Workpattern&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;clock&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:to_time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Workpattern&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;clock&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;59&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
-&lt;span class=&quot;n&quot;&gt;mywp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;resting&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:days&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:weekday&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:from_time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Workpattern&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;clock&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:to_time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Workpattern&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;clock&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;59&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
-&lt;span class=&quot;n&quot;&gt;mywp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;resting&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:days&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:weekday&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:from_time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Workpattern&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;clock&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;18&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:to_time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Workpattern&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;clock&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;23&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;59&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;As well as &lt;code class=&quot;highlighter-rouge&quot;&gt;:weekend&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;:weekday&lt;/code&gt; it is possible to use &lt;code class=&quot;highlighter-rouge&quot;&gt;:mon&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;:tue&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;:wed&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;:thu&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;:fri&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;:sat&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;:sun&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;all&lt;/code&gt;.&lt;/p&gt;
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mywp</span><span class="p">.</span><span class="nf">resting</span> <span class="ss">:days</span> <span class="o">=&gt;</span><span class="ss">:weekday</span><span class="p">,</span> <span class="ss">:from_time</span><span class="o">=&gt;</span><span class="no">Workpattern</span><span class="p">.</span><span class="nf">clock</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span><span class="ss">:to_time</span><span class="o">=&gt;</span><span class="no">Workpattern</span><span class="p">.</span><span class="nf">clock</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">59</span><span class="p">)</span> 
+<span class="n">mywp</span><span class="p">.</span><span class="nf">resting</span> <span class="ss">:days</span> <span class="o">=&gt;</span><span class="ss">:weekday</span><span class="p">,</span> <span class="ss">:from_time</span><span class="o">=&gt;</span><span class="no">Workpattern</span><span class="p">.</span><span class="nf">clock</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span><span class="ss">:to_time</span><span class="o">=&gt;</span><span class="no">Workpattern</span><span class="p">.</span><span class="nf">clock</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">59</span><span class="p">)</span> 
+<span class="n">mywp</span><span class="p">.</span><span class="nf">resting</span> <span class="ss">:days</span> <span class="o">=&gt;</span><span class="ss">:weekday</span><span class="p">,</span> <span class="ss">:from_time</span><span class="o">=&gt;</span><span class="no">Workpattern</span><span class="p">.</span><span class="nf">clock</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span><span class="ss">:to_time</span><span class="o">=&gt;</span><span class="no">Workpattern</span><span class="p">.</span><span class="nf">clock</span><span class="p">(</span><span class="mi">23</span><span class="p">,</span><span class="mi">59</span><span class="p">)</span> 
+</code></pre></div></div>
+<p>As well as <code class="language-plaintext highlighter-rouge">:weekend</code> and <code class="language-plaintext highlighter-rouge">:weekday</code> it is possible to use <code class="language-plaintext highlighter-rouge">:mon</code>, <code class="language-plaintext highlighter-rouge">:tue</code>, <code class="language-plaintext highlighter-rouge">:wed</code>, <code class="language-plaintext highlighter-rouge">:thu</code>, <code class="language-plaintext highlighter-rouge">:fri</code>, <code class="language-plaintext highlighter-rouge">:sat</code>, <code class="language-plaintext highlighter-rouge">:sun</code> or <code class="language-plaintext highlighter-rouge">all</code>.</p>
 
-&lt;p&gt;With &lt;code class=&quot;highlighter-rouge&quot;&gt;mywp&lt;/code&gt; setup, the &lt;code class=&quot;highlighter-rouge&quot;&gt;#calc&lt;/code&gt; method is used to add 32 hours which must be supplied as the number of whole minutes (1920) to a date.&lt;/p&gt;
+<p>With <code class="language-plaintext highlighter-rouge">mywp</code> setup, the <code class="language-plaintext highlighter-rouge">#calc</code> method is used to add 32 hours which must be supplied as the number of whole minutes (1920) to a date.</p>
 
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;my_date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;gm&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2011&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; 
-&lt;span class=&quot;n&quot;&gt;result_date&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mywp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;calc&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my_date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1920&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# =&amp;gt; 6/9/11@18:00&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_date</span><span class="o">=</span><span class="no">Time</span><span class="p">.</span><span class="nf">gm</span> <span class="mi">2011</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">0</span> 
+<span class="n">result_date</span> <span class="o">=</span> <span class="n">mywp</span><span class="p">.</span><span class="nf">calc</span> <span class="n">my_date</span><span class="p">,</span><span class="mi">1920</span>  <span class="c1"># =&gt; 6/9/11@18:00</span>
+</code></pre></div></div>
 
-&lt;p&gt;The result takes into account the non-working or resting times.&lt;/p&gt;
+<p>The result takes into account the non-working or resting times.</p>
 
-&lt;p&gt;Subtracting a date is just as easy by using a negative number of minutes in &lt;code class=&quot;highlighter-rouge&quot;&gt;#calc&lt;/code&gt;.&lt;/p&gt;
+<p>Subtracting a date is just as easy by using a negative number of minutes in <code class="language-plaintext highlighter-rouge">#calc</code>.</p>
 
-&lt;p&gt;Finding the duration between two dates is also easy using the &lt;code class=&quot;highlighter-rouge&quot;&gt;#diff&lt;/code&gt; method.&lt;/p&gt;
+<p>Finding the duration between two dates is also easy using the <code class="language-plaintext highlighter-rouge">#diff</code> method.</p>
 
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;diff_result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mywp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;diff&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my_date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result_date&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# =&amp;gt; 1920&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">diff_result</span> <span class="o">=</span> <span class="n">mywp</span><span class="p">.</span><span class="nf">diff</span> <span class="n">my_date</span><span class="p">,</span> <span class="n">result_date</span>  <span class="c1"># =&gt; 1920</span>
+</code></pre></div></div>
 
-&lt;p&gt;Vacations can be added to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Workpattern&lt;/code&gt; using the &lt;code class=&quot;highlighter-rouge&quot;&gt;#resting&lt;/code&gt; method:&lt;/p&gt;
+<p>Vacations can be added to the <code class="language-plaintext highlighter-rouge">Workpattern</code> using the <code class="language-plaintext highlighter-rouge">#resting</code> method:</p>
 
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;mywp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;resting&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:days&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:start&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;DateTime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;civil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2011&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:finish&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;DateTime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;civil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2011&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Find out if a specific date and time is working or not.&lt;/p&gt;
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mywp</span><span class="p">.</span><span class="nf">resting</span> <span class="ss">:days</span> <span class="o">=&gt;</span> <span class="ss">:all</span><span class="p">,</span> <span class="ss">:start</span> <span class="o">=&gt;</span> <span class="no">DateTime</span><span class="p">.</span><span class="nf">civil</span><span class="p">(</span><span class="mi">2011</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="ss">:finish</span> <span class="o">=&gt;</span> <span class="no">DateTime</span><span class="p">.</span><span class="nf">civil</span><span class="p">(</span><span class="mi">2011</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">)</span>
+</code></pre></div></div>
+<p>Find out if a specific date and time is working or not.</p>
 
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;mydate&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;DateTime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;civil&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2011&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;mywp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;resting?&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mydate&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# =&amp;gt; true&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;mywp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;working?&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mydate&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# =&amp;gt; false&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">mydate</span> <span class="o">=</span> <span class="no">DateTime</span><span class="p">.</span><span class="nf">civil</span> <span class="mi">2011</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span>
+<span class="n">mywp</span><span class="p">.</span><span class="nf">resting?</span> <span class="n">mydate</span>  <span class="c1"># =&gt; true</span>
+<span class="n">mywp</span><span class="p">.</span><span class="nf">working?</span> <span class="n">mydate</span>  <span class="c1"># =&gt; false</span>
+</code></pre></div></div>
 
-&lt;h3 id=&quot;manage&quot;&gt;Manage&lt;/h3&gt;
+<h3 id="manage">Manage</h3>
 
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# Fetch a specific Workpattern&lt;/span&gt;
-&lt;span class=&quot;no&quot;&gt;Workpattern&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;My Workpattern&quot;&lt;/span&gt;
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Fetch a specific Workpattern</span>
+<span class="no">Workpattern</span><span class="p">.</span><span class="nf">get</span> <span class="s2">"My Workpattern"</span>
 
-&lt;span class=&quot;c1&quot;&gt;# Delete a specific Workpattern&lt;/span&gt;
-&lt;span class=&quot;no&quot;&gt;Workpattern&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;delete&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;My Workpattern&quot;&lt;/span&gt;
+<span class="c1"># Delete a specific Workpattern</span>
+<span class="no">Workpattern</span><span class="p">.</span><span class="nf">delete</span> <span class="s2">"My Workpattern"</span>
 
-&lt;span class=&quot;c1&quot;&gt;# Delete all Workpatterns&lt;/span&gt;
-&lt;span class=&quot;no&quot;&gt;Workpattern&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;clear&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<span class="c1"># Delete all Workpatterns</span>
+<span class="no">Workpattern</span><span class="p">.</span><span class="nf">clear</span>
+</code></pre></div></div>
 
-&lt;h2 id=&quot;license&quot;&gt;License&lt;/h2&gt;
+<h2 id="license">License</h2>
 
-&lt;p&gt;(The MIT License)&lt;/p&gt;
+<p>(The MIT License)</p>
 
-&lt;p&gt;Copyright (c) 2012 - 2021&lt;/p&gt;
+<p>Copyright (c) 2012 - 2021</p>
 
-&lt;p&gt;Permission is hereby granted, free of charge, to any person obtaining
+<p>Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
 ‘Software’), to deal in the Software without restriction, including
 without limitation the rights to use, copy, modify, merge, publish,
 distribute, sublicense, and/or sell copies of the Software, and to
 permit persons to whom the Software is furnished to do so, subject to
-the following conditions:&lt;/p&gt;
+the following conditions:</p>
 
-&lt;p&gt;The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.&lt;/p&gt;
+<p>The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.</p>
 
-&lt;p&gt;THE SOFTWARE IS PROVIDED ‘AS IS’, WITHOUT WARRANTY OF ANY KIND,
+<p>THE SOFTWARE IS PROVIDED ‘AS IS’, WITHOUT WARRANTY OF ANY KIND,
 EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
 MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
 CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.&lt;/p&gt;</content><author><name>Barrie Callender</name><email>barrie@callenb.org</email></author><summary type="html">Workpattern</summary></entry></feed>
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>]]></content><author><name>Barrie Callender</name><email>barrie@callenb.org</email></author><summary type="html"><![CDATA[Documentation for the Workpattern Rubygem which calculates dates and durations based on customised working and resting patterns]]></summary></entry></feed>
